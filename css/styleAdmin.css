@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins';
+}
+
+a:active{
+	color: white;
+}
+
+/* ADMIN.PHP */
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #FFF7ED;
+	min-height: 100vh;
+}
+
+.img{
+	margin: auto;
+}
+
+.img img{
+	width: 650px;
+}
+
+.connexion{
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.connexion h1{
+	font-family: 'Charmonman';
+	font-size: 45px;
+	margin: auto;
+}
+
+.input{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.connexion label{
+	margin-top: 40px;
+}
+
+.input input{
+	width: 350px;
+	height: 55px;
+	border-radius: 30px;
+	background-color: #FFD6A7;
+	border: none;
+}
+
+.connexion #button{
+	width: 150px;
+	height: 55px;
+	border-radius: 30px;
+	background-color: #FFD6A7;
+	border: none;
+	margin: auto;
+	margin-top: 40px;
+	font-family: 'Poppins';
+}
+
+input:required:focus:invalid{
+	border: dashed 4px red;
+}
+
+input:required:focus:valid{
+	border: solid 4px green;
+}
+
+
+/* DASHBOARD.PHP */
+
+body.page2{
+	background-color: #EBF6FB;
+}
+
+header.page2{
+	position: fixed;
+	width: 225px;
+}
+
+header .nav-part{
+	background-color: #BEDEEC;
+	width: 225px;
+	min-height: 100vh;
+	padding: 200px 30px 0 30px;
+}
+
+header .nav-part span{
+	display: inline-block;
+	width: 170px;
+	font-family: 'Charmonman';
+	padding: 3px 12px;
+	text-align: center;
+	font-size: 20px;
+	margin: 30px 0;
+	background-color: #EBF6FB;
+	border-radius: 30px;
+	transition: 1s;
+}
+
+header .nav-part span.active{
+	width: 220px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.button-dash{
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	border: none;
+	border-radius: 30px;
+	position:absolute;
+	right:30px;
+	top:30px;
+	width: 120px;
+	height: 50px;
+	background-color: #3D7A94;
+}
+
+.button-dash a{
+	color: white;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.admin-part{
+	padding-top: 40px;
+	text-align: center;
+	max-height: 100px;
+	z-index: 10;
+}
+
+.admin-part h2{
+	font-family: 'Charmonman';
+	font-size: 35px;
+}
+
+.admin-part p{
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.display-cake{
+	margin-left: 300px;
+	margin-top: 100px;
+	overflow-x:auto
+}
+
+.display-cake .tab-content{
+  max-width: 100%;
+  display: none;
+}
+
+.display-cake .filter-item:hover:not(.active){
+  opacity: 0.6;
+}
+
+.display-cake .filter-item.active{
+  color: #3D7A94;
+}
+
+.display-cake .tab-content.active{
+  display: block;
+}
+
+.display-cake .alert-success, .display-cake .alert-danger{
+	display: none;
+}
+
+#modalAddCake{
+	font-size: 14px;
+	background-color: #9CB44D;
+	position: absolute;
+	top: 150px;
+	right: 20px;
+	border: none;
+}
+
+#exampleModalLabel{
+	color: #748D25;
+}
+
+#submitCake{
+	background-color: #9CB44D;
+	border: none;
+}
+
+
+/* LOGOUT.PHP */
+
+body.page3{
+	background-color: #FCEBF9;
+	text-align: center;
+	line-height: 60px;
+}
+
+.page3 h2{
+	margin-top: 50px;
+	font-family: 'Charmonman';
+	font-size: 40px;
+}
+
+.page3 a{
+	text-decoration: none;
+}
+
+/* ERROR */
+
+body.page4{
+	background-color: #FCEBF9;
+	text-align: center;
+	line-height: 60px;
+}
+
+.page4 h2{
+	margin-top: 50px;
+	font-family: 'Charmonman';
+	font-size: 40px;
+}
+
+.page4 a{
+	text-decoration: none;
+}
+
