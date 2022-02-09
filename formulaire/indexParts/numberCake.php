@@ -1,20 +1,24 @@
 <div id="ChoiceNB" name="Numbercakeu">
-  <h3 id="NBName" name="NBName">Number Cake</h3>
+  <!-- <h3 id="NBName" name="NBName">Number Cake</h3> -->
   <br>
             <input
               name="NBGateau"
-              type="text"
+              type="number"
               id="field1"
               class="field"
-              placeholder="Chiffre ou nombre de votre gâteau"
+              placeholder="Nombre de votre gâteau"
             />
+
             <input
               name="NBPart"
-              type="text"
+              type="number"
               id="field2"
               class="field"
+              min="10" max="25"
+              step="5"
               placeholder="Entrez le nombre de part"
             />
+
             <label for="NBGenoise">Choix de la genoise</label>
             <select name="NBGenoise" id="NBGenoise">
               <option value="0" disabled></option>

@@ -1,7 +1,7 @@
 <div id="ChoiceCD">
             <input
               name="CDPart"
-              type="text"
+              type="number"
               class="field"
               id="CDPart"
               placeholder="Saississez le nombre de part"

@@ -1,6 +1,6 @@
-<div name="Truffes Brésiliennes" id="ChoiceTB">
-            <label for="TypeCake">Choississez vos Truffes Brésiliennes</label>
-            <select id="TypeCake" name="TypeTB">
+<div name="TruffesBrésiliennes" id="ChoiceTB">
+            <label for="TypeTB">Choississez vos Truffes Brésiliennes</label>
+            <select id="TypeTB" name="TypeTB">
               <option value="0" disabled></option>
               <option value="Brigadeiro">Brigadeiro</option>
               <option value="Beijinho de coco">Beijinho de coco</option>

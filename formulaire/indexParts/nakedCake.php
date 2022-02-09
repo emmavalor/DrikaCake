@@ -1,7 +1,7 @@
 <div id="ChoiceNC">
             <input
               name="NCPart"
-              type="text"
+              type="number"
               class="field"
               id="NCPart"
               placeholder="Saississez le nombre de part"

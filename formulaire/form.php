@@ -32,7 +32,9 @@ $cakeTrad = "Cake Traditionnel". " " . $_POST["TypeCake"];
 $miniCup = "Mini Cupcake". " " . $_POST["MCPart"]. "" . $_POST["MCGanache"];
 $sables = "Sablés". " " . $_POST["SPart"]. "" . $_POST["SGalacage"];
 $sucetteMeringue = "Sucette Meringue". " " . $_POST["SMPart"];
-
+$cakePop = "Cake Pop". " " . $_POST["CPPart"];
+$nakedCake = "Naked Cake". " " . $_POST["NCPart"]. " " . $_POST["NCGenoise"]. " " . $_POST["InfoSup"]. " " . $_POST["messagesupplementaire"];
+$truffesBresil = "Truffes Brésiliennes". " " . $_POST["TypeTB"];
 
 
 
@@ -50,7 +52,7 @@ Message: $message
 
 $commande = "
 theme: $theme
-commandes: $numberCake, $cakeDesign, $cakeTrad, $miniCup, $sables, $sucetteMeringue
+commandes: $numberCake, $cakeDesign, $cakeTrad, $miniCup, $sables, $sucetteMeringue, $cakePop, $nakedCake, $truffesBresil
 ";
 
 

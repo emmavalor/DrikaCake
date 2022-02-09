@@ -1,9 +1,11 @@
 <div id="ChoiceS">
             <input
               name="SPart"
-              type="text"
+              type="number"
               id="SPart"
               class="field"
+              min="12" max="1900"
+              step="12"
               placeholder="Le nombre de sablés"
             />
             <label for="SGalacage">Choississez votre glacage</label>

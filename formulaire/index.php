@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo-final.png">
+    <title>Commande Drika Cake</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link rel="icon" type="image/png" href="../image/logo-final.png">
-    <title>Drika Cake | Formulaire</title>
   </head>
   <body>
     <form
@@ -45,7 +45,11 @@
             <option value="SM">Sucette Meringue</option>
             <option value="S">Sablés</option>
             <option value="TB">Truffes Brésiliennes</option>
-            <option value="D">Desserts</option>
+            <option value="DQ">Cake Quindim</option>
+            <option value="DP">Pudim</option>
+            <option value="DMFP">Mousse Fruits de la Passion</option>
+            <option value="DMC">Moelleux Chocolat</option>
+            <option value="DSS">Sachet de Sablés</option>
           </select>
 
           <!-- Number Cake -->
@@ -60,11 +64,27 @@
           <!-- MINI CUPCACKE -->
           <?php include './indexParts/miniCupcake.php'; ?>
 
+          <!-- CAKE POP -->
+          <?php include './indexParts/cakePop.php'; ?>
+
+          <!-- NAKED CAKE -->
+          <?php include './indexParts/nakedCake.php'; ?>
+
           <!-- SABLE -->
           <?php include './indexParts/sable.php'; ?>
 
           <!-- SUCETTE MERINGUE -->
           <?php include './indexParts/sucetteMeringue.php'; ?>
+
+          <!-- TRUFFES BRESILIENNES -->
+          <?php include './indexParts/truffesBresil.php'; ?>
+
+          <!-- LES DESSERTS -->
+          <?php include './indexParts/MoelleuxChoco.php'; ?>
+          <?php include './indexParts/MousseFP.php'; ?>
+          <?php include './indexParts/Pudim.php'; ?>
+          <?php include './indexParts/Quindim.php'; ?>
+          <?php include './indexParts/SachetSable.php'; ?>
 
           <br />
 
@@ -80,6 +100,23 @@
             <table name="cake5" id="me5" class="me5a"></table>
 
             <table name="cake6" id="me6" class="me6a"></table>
+
+            <table name="cake7" id="me7" class="me7a"></table>
+
+            <table name="cake9" id="me9" class="me9a"></table>
+
+            <table name="cake10" id="me10" class="me10a"></table>
+
+            <table name="cake11" id="me11" class="me11a"></table>
+
+            <table name="cake12" id="me12" class="me12a"></table>
+
+            <table name="cake13" id="me13" class="me13a"></table>
+
+            <table name="cake14" id="me14" class="me14a"></table>
+
+            <table name="cake15" id="me15" class="me15a"></table>
+            
           </div>
 
           <br />
