@@ -38,7 +38,7 @@ h1{
 
 a {
   text-decoration: none;
-  color: blanchedalmond;
+  color: #699c8a;
 }
 
 /*********** HEADER ************/
@@ -106,7 +106,7 @@ header.sticky .banner {
 
 /*********** Header Title Drika Cake ************/
 
-header .logo{
+/*header .logo{
   font-family: "Charmonman";
   position: absolute;
   top: 50%;
@@ -120,12 +120,25 @@ header .logo{
   z-index: 3;
   text-align: center;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3), 2px 2px 2px rgba(255, 255, 255, 0);
+}*/
+
+header img.logo{
+  width: 450px;
+  height: auto;
+  font-family: "Charmonman";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s;
+  text-decoration: none;
+  z-index: 3;
 }
 
 /*********** Header Title Drika Cake sticky ************/
 
 header.sticky .logo {
   position: absolute;
+  width: 78px;
   font-size: 2em;
   left: 100px;
   transform: translate(0%, -50%);
@@ -184,7 +197,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--bg-pink-2);
+  color: var(--bg-pink-4);
 }
 
 /*BAR NAV MEDIA QUERIE*/
@@ -238,7 +251,7 @@ nav ul li a:hover {
   }
 
   nav.active ul{
-    background: var(--bg-pink-1);
+    background: var(--bg-beige-3);
     font-size: 20px;
     height: auto;
   }
@@ -247,7 +260,7 @@ nav ul li a:hover {
 /*********** PRESENTATION ************/
 
 #description {
-  background-color: var(--bg-beige-1);
+  background-color: #97dfc6;
   margin-top: 10vh;
   padding: 100px;
   padding-left: 0;
@@ -261,7 +274,7 @@ nav ul li a:hover {
   align-items: center;
   margin-bottom: 6vh;
   font-size: 6vw;
-  color: var(--bg-beige-3);
+  color: white;
   font-family: 'Charmonman';
 }
 
@@ -271,9 +284,12 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  padding-bottom: 40px;
 }
 
 .container .card {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   width: 600px;
   height: 350px;
@@ -281,7 +297,7 @@ nav ul li a:hover {
   display: flex;
   transition: 0.5s;
   align-items: center;
-  background: linear-gradient(45deg, var(--bg-blue-4), var(--bg-blue-1));
+  background: linear-gradient(45deg, #c0ebdc, #eaf8f3);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -316,14 +332,14 @@ nav ul li a:hover {
 }
 
 .container .card .content h2 {
-  color: var(--bg-blue-1);
+  color: #5a8576;
   text-transform: uppercase;
   font-size: 2.2em;
   line-height: 1em;
 }
 
 .container .card .content p {
-  color: white;
+  color: #5a8576;
 }
 
 /* PRESENTATION CARD MEDIA QUERIES */
