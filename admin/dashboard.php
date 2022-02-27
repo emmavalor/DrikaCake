@@ -24,7 +24,6 @@
 						<span class="filter-item active" data-target='.allcake'>Tous les gâteaux</span>
 						<span class="filter-item" data-target='.bigcake'>Gâteaux</span>
 						<span class="filter-item" data-target='.littlecake'>Petits gâteaux</span>
-						<span class="filter-item" data-target='.dessert'>Dessert</span>
         			</div>
 				</div>
 			</header>
@@ -172,10 +171,6 @@
 					</div>
 
 					<div class="littlecake tab-content">
-					</div>
-
-					<div class="dessert tab-content">
-						 <p>emma</p>
 					</div>
 			</section>
 		</body>

@@ -33,7 +33,7 @@ function displayCake() {
         .then(result => 
             result.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             if (data.status === "OK") {
                 let resultCakeSort = [];
 
@@ -60,6 +60,7 @@ function createStyle(cake){
     let bigCake = document.createElement('div');
     bigCake.setAttribute("class", "big_cake");
     bigCake.setAttribute("id", `cake${cake.id}`);
+    // bigCake.style.display = "none";
 
     let titleCake = document.createElement('div');
     titleCake.setAttribute("class", "title_bigcake");
@@ -69,6 +70,7 @@ function createStyle(cake){
 
     let h1_title = document.createElement('h1');
     h1_title.textContent = `${cake.nom}`;
+    h1_title.setAttribute("id", `title${cake.id}`);
 
     let wave = document.createElement('div');
     wave.setAttribute("class", "wave");
@@ -159,6 +161,26 @@ function createStyle(cake){
 
 
 }
+
+function sectionBigCake(){
+    var carousel1 = document.querySelector('#carousel1');
+    var carousel2 = document.querySelector('#carousel2');
+    var carousel3 = document.querySelector('#carousel3');
+    var carousel4 = document.querySelector('#carousel4');
+
+    var numberCake = document.querySelector('#cake12');
+    console.log(numberCake);
+
+}
+
+sectionBigCake();
+
+
+
+
+
+
+
 
 
 

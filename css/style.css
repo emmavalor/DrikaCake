@@ -260,7 +260,7 @@ nav ul li a:hover {
 /*********** PRESENTATION ************/
 
 #description {
-  background-color: #97dfc6;
+  background-color: white;
   margin-top: 10vh;
   padding: 100px;
   padding-left: 0;
@@ -274,7 +274,7 @@ nav ul li a:hover {
   align-items: center;
   margin-bottom: 6vh;
   font-size: 6vw;
-  color: white;
+  color: #97dfc6;
   font-family: 'Charmonman';
 }
 
