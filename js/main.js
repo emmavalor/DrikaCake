@@ -147,7 +147,6 @@ var flip_card2 = document.querySelector('#card2');
 var flip_card3 = document.querySelector('#card3');
 var flip_card4 = document.querySelector('#card4');
 var flip_card5 = document.querySelector('#card5');
-var flip_card6 = document.querySelector('#card6');
 var titre = document.querySelector('#f1 h1');
 var description = document.querySelector('#f2 p');
 var tarif = document.querySelector('#f4 p');
@@ -244,22 +243,6 @@ flip_card5.addEventListener('click', function(){
     photo3.style.backgroundPosition = "top";
 });
 
-flip_card6.addEventListener('click', function(){
-    titre.innerHTML = "Mini Naked Cake";
-    description.innerHTML = "Gâteau simple, authentique, naturel, débarrassé de toute décoration pompeuse. Le Mini Naked Cake n’est pas recouvert d’éléments comme le glaçage ou la pâte à sucre. Il sera juste travaillé rapidement avec une spatule. <br/> C'est une bouchée de fraicheur, car il peut être réfrigéré.";
-    tarif.innerHTML = "1€ la pièce (Commande à la douzaine, 12,24,36…) <br> Pérsonnalisation spécifique + 1€";
-    parfum.style.display = 'none';
-    parfum_taste.innerHTML = 'Il est composé d’une génoise (au choix), superposée et fourrées avec une légère crème au beurre et embellies par des fruits frais. <br/> Pour la décoration on peut tout faire aussi : avec des fleurs, fruits, cake toppers.';
-    photo1.style.backgroundImage = "url('image/mini_nakedcake5.jpeg')";
-    photo1.style.backgroundSize = "cover";
-    photo1.style.backgroundPosition = "top";
-    photo2.style.backgroundImage = "url('image/mini_nakedcake6.jpeg')";
-    photo2.style.backgroundSize = "cover";
-    photo2.style.backgroundPosition = "top";
-    photo3.style.backgroundImage = "url('image/mini_nakedcake1.jpeg')";
-    photo3.style.backgroundSize = "cover";
-    photo3.style.backgroundPosition = "top";
-});
 
 
 
