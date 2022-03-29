@@ -23,7 +23,7 @@ session_destroy();
 
 			<div id="deconnexion">
 				<p>Aurevoir et à bientôt</p>
-				<a href="../admin.php"><p>Cliquez ici pour revenir a la page de connexion</p></a>
+				<a href="../admin.php"><p>Cliquez ici pour revenir à la page de connexion</p></a>
 			</div>
 
 		</body>

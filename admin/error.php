@@ -8,7 +8,7 @@
 			<link rel="stylesheet" href="../css/styleAdmin.css">
 			<script src="../js/formulaire.js" defer></script>
 			<link rel="icon" type="image/png" href="../image/logo-final.png">
-			<title>Administrateur</title>
+			<title>Drika Cakes</title>
 		</head>
 
 		<body class="page4">
@@ -16,7 +16,7 @@
 
 			<div id="deconnexion">
 				<p>Mauvais identifiant ou mot de passe !</p>
-				<a href="../admin.php"><p>Retour a la page de connexion</p></a>
+				<a href="../admin.php"><p>Retour à la page de connexion</p></a>
 			</div>
 		</body>
 	</html>

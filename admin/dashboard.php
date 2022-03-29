@@ -9,11 +9,9 @@
 	        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 			<link rel="stylesheet" href="../css/styleAdmin.css">
 			<script src="../js/formulaire.js" defer></script>
-			<script src="../DrikaCake-master/scripts/littlecake.js" defer></script>
 			<script src="../DrikaCake-master/scripts/cake.js" defer></script>
-  			<script src="../DrikaCake-master/scripts/bigcake.js" defer></script>
 			<link rel="icon" type="image/png" href="../image/logo-final.png">
-			<title>Drika Cake | Administrateur</title>
+			<title>Drika Cakes | Administrateur</title>
 		</head>
 
 		<body class="page2">
@@ -22,8 +20,6 @@
 				<div class="nav-part">
 					<div class="cake-filter">
 						<span class="filter-item active" data-target='.allcake'>Tous les gâteaux</span>
-						<span class="filter-item" data-target='.bigcake'>Gâteaux</span>
-						<span class="filter-item" data-target='.littlecake'>Petits gâteaux</span>
         			</div>
 				</div>
 			</header>
@@ -70,46 +66,19 @@
 											</div>
 									    </div>
 									</div>
-							
-									<div class="row">
-						    		<div class="col mt-2 d-flex flex-column align-content-center flex-wrap" style="min-width: 200px;">
-						    		 	<div class="form-group text-align-center">
-											<label>Citez les allergènes du gâteau
-											<textarea class="form-control" type="text" name="allergene" id="allergene" placeholder="Allergene"></textarea>
-											</label>
-										</div>
-						    	</div>
-						    		<div class="col mt-2 d-flex flex-column align-content-center flex-wrap" style="min-width: 200px;">
-						    			<div class="form-group text-align-center">
-												<label>Le gâteau est-il bio ?
-													<div class="form-check">
-														<input class="form-check-input" type="radio" name="bio" value="1" id="oui1" required /><label class="form-check-label" for="oui1">oui</label>
-													</div>
-													<div class="form-check">
-														<input class="form-check-input" type="radio" name="bio" value="0" id="non1" required /><label class="form-check-label" for="non1">non</label>
-													</div>
-												</label>
-											</div>
-										</div>
-									</div>
 				
 									<div class="row">
 									    <div class="col mt-2 d-flex flex-column align-content-center flex-wrap" style="min-width: 200px;">
 											<div class="form-group text-align-center">
-												<label>Le gâteau contient-il du gluten ?
-													<div class="form-check">
-														<input class="form-check-input" type="radio" name="gluten" value="1" id="oui2" required /><label class="form-check-label" for="oui2">oui</label>
-													</div>
-													<div class="form-check">
-														<input class="form-check-input" type="radio" name="gluten" value="0" id="non2" required /><label class="form-check-label" for="non2">non</label>
-													</div>
+												<label>Precisez le type du gâteau
+												<textarea class="form-control" name="typeGateau" id="typeGateau" placeholder="Type du gâteau"></textarea>
 												</label>
 											</div>
 										</div>
 									    <div class="col mt-2 d-flex flex-column align-content-center flex-wrap" style="min-width: 200px;">
 											<div class="form-group text-align-center">
 												<label>Citez la/les génoise(s)
-												<textarea class="form-control" name="genoise" id="genoise" placeholder="Génoise" required></textarea>
+												<textarea class="form-control" name="genoise" id="genoise" placeholder="Génoise"></textarea>
 												</label>
 											</div>
 										</div>
@@ -119,14 +88,14 @@
 									    <div class="col mt-2 d-flex flex-column align-content-center flex-wrap" style="min-width: 200px;">
 											<div class="form-group text-align-center">
 												<label>Citez la/les ganache(s)
-												<textarea class="form-control" name="ganache" id="ganache" placeholder="Ganache" required></textarea>
+												<textarea class="form-control" name="ganache" id="ganache" placeholder="Ganache"></textarea>
 												</label>
 											</div>
 									    </div>
 									    <div class="col mt-2 d-flex flex-column align-content-center flex-wrap" style="min-width: 200px;">
 											<div class="form-group text-align-center">
 												<label>Precisez le délai de commande (en jour)
-												<input class="form-control" type="number" name="delaiCommande" id="delai" placeholder="Délai de commande" required>
+												<input class="form-control" type="number" name="delaiCommande" id="delai" placeholder="Délai de commande">
 												</label>
 											</div>
 										</div>

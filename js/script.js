@@ -2,7 +2,7 @@ window.addEventListener("scroll", function()
 {
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
-})
+}) 
 
 
 const navigation = document.querySelector('nav');
@@ -38,6 +38,7 @@ function displayCake() {
                 let resultCakeSort = [];
 
                 data.result.forEach(cake => {
+                    // console.log(cake.nom);
                     if (cake.nom.includes('Cake')) {
                         resultCakeSort.push(cake);
                     }
@@ -60,7 +61,6 @@ function createStyle(cake){
     let bigCake = document.createElement('div');
     bigCake.setAttribute("class", "big_cake");
     bigCake.setAttribute("id", `cake${cake.id}`);
-    // bigCake.style.display = "none";
 
     let titleCake = document.createElement('div');
     titleCake.setAttribute("class", "title_bigcake");
@@ -169,11 +169,100 @@ function sectionBigCake(){
     var carousel4 = document.querySelector('#carousel4');
 
     var numberCake = document.querySelector('#cake12');
-    console.log(numberCake);
+    // console.log(numberCake);
 
 }
 
 sectionBigCake();
+
+function displayDessert() {
+    fetch(`../../DrikaCake/DrikaCake-master/src/controllers/request.php?function=findCake`)
+        .then(result => 
+            result.json())
+        .then(data => {
+            // console.log(data);
+            if (data.status === "OK") {
+                let resultCakeSort = [];
+
+                data.result.forEach(cakeDessert => {
+                    if (cakeDessert.nom.includes('Dessert')) {
+                        resultCakeSort.push(cakeDessert);
+                    }
+                });
+                // console.log(resultCakeSort);
+                resultCakeSort.forEach(cakeDessert => {
+                    createStyleDessert(cakeDessert);
+                });
+            } else {
+                flashMessage(false);
+            }
+        }
+        );
+}
+displayDessert();
+
+function createStyleDessert(cakeDessert){
+    let dessertItem = document.createElement('div');
+    dessertItem.setAttribute("class", "dessert-item");
+
+    let dessertImage = document.createElement('div');
+    dessertImage.setAttribute("class", "dessert-img");
+
+    let dessertImg = document.createElement('img');
+    dessertImg.setAttribute("src", `image/${cakeDessert.photo}`);
+    dessertImg.setAttribute('alt', `photo de ${cakeDessert.nom}`);
+
+    let dessertText = document.createElement('div');
+    dessertText.setAttribute("class", "dessert-text");
+
+    let dessertH1 = document.createElement('h1');
+    dessertH1.textContent = `${cakeDessert.nom}`;
+
+    let dessertP = document.createElement('p');
+    dessertP.textContent = `${cakeDessert.description}`;
+
+    let dessertPrice = document.createElement('div');
+    dessertPrice.setAttribute('class', 'dessert-price');
+
+    let dessertPriceP = document.createElement('p');
+    dessertPriceP.textContent = `${cakeDessert.tarif}`;  
+
+
+    dessertItem.appendChild(dessertImage);
+    dessertImage.appendChild(dessertImg);
+
+    dessertItem.appendChild(dessertText);
+
+    dessertText.appendChild(dessertH1);
+    dessertText.appendChild(dessertP);
+
+    dessertItem.appendChild(dessertPrice);
+
+    dessertPrice.appendChild(dessertPriceP);
+
+    document.querySelector(".dessert").appendChild(dessertItem);
+
+}
+
+
+
+
+
+        // <div class="dessert-item">
+        //     <div class="dessert-img">
+        //       <img src="image/quindim.jpg" alt="quindim">
+        //     </div>
+
+        //     <div class="dessert-text">
+        //       <h1>Quindim</h1>
+        //       <p>Dessert brésilien à base de jaune d’œufs, noix de coco fraîche, lait de coco et sucre. <br>
+        //         Ce dessert ne contient ni gluten et ni lactose. </p>
+        //     </div>
+
+        //     <div class="dessert-price">
+        //       <p>18€ - 10 parts</p>
+        //     </div>
+        // </div>
 
 
 

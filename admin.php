@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/styleAdmin.css">
 		<script src="js/formulaire.js"></script>
 		<link rel="icon" type="image/png" href="image/logo-final.png">
-		<title>Drika Cake | Administrateur</title>
+		<title>Drika Cakes | Administrateur</title>
 	</head>
 
 	<body>
