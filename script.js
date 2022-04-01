@@ -123,6 +123,9 @@ function createStyle(cake){
     let p_tarif = document.createElement('p');
     p_tarif.textContent = `${cake.tarif}`;
 
+    let wave2 = document.createElement('div');
+    wave2.setAttribute("class", "wave2");
+
     bigCake.appendChild(titleCake);
     titleCake.appendChild(img);
     titleCake.appendChild(h1_title);
@@ -155,6 +158,8 @@ function createStyle(cake){
     tarif.appendChild(h1_tarif);
     h1_tarif.appendChild(text_tarif);
     tarif.appendChild(p_tarif);
+
+    bigCake.appendChild(wave2);
 
     document.querySelector(".bigCake_container").appendChild(bigCake);
 
