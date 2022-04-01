@@ -2,7 +2,7 @@ window.addEventListener("scroll", function()
 {
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
-}) 
+})
 
 
 const navigation = document.querySelector('nav');
@@ -12,7 +12,6 @@ function(){
     this.classList.toggle('active');
     navigation.classList.toggle('active');
 }
-
 // galerie //
 
 document.querySelectorAll('.image-container img').forEach(image =>{ 
@@ -29,7 +28,7 @@ document.querySelectorAll('.image-container img').forEach(image =>{
 // Display Cake
 
 function displayCake() {
-    fetch(`../../DrikaCake/DrikaCake-master/src/controllers/request.php?function=findCake`)
+    fetch(`../../DrikaCakeML-master/DrikaCake-master/src/controllers/request.php?function=findCake`)
         .then(result => 
             result.json())
         .then(data => {
@@ -38,8 +37,8 @@ function displayCake() {
                 let resultCakeSort = [];
 
                 data.result.forEach(cake => {
-                    // console.log(cake.nom);
-                    if (cake.nom.includes('Cake')) {
+                    console.log(cake.typeGateau);
+                    if (cake.typeGateau.includes('Cake')) {
                         resultCakeSort.push(cake);
                     }
                 });
@@ -124,6 +123,9 @@ function createStyle(cake){
     let p_tarif = document.createElement('p');
     p_tarif.textContent = `${cake.tarif}`;
 
+    let wave2 = document.createElement('div');
+    wave2.setAttribute("class", "wave2");
+
     bigCake.appendChild(titleCake);
     titleCake.appendChild(img);
     titleCake.appendChild(h1_title);
@@ -157,6 +159,8 @@ function createStyle(cake){
     h1_tarif.appendChild(text_tarif);
     tarif.appendChild(p_tarif);
 
+    bigCake.appendChild(wave2);
+
     document.querySelector(".bigCake_container").appendChild(bigCake);
 
 
@@ -176,7 +180,7 @@ function sectionBigCake(){
 sectionBigCake();
 
 function displayDessert() {
-    fetch(`../../DrikaCake/DrikaCake-master/src/controllers/request.php?function=findCake`)
+    fetch(`../../DrikaCakeML-master/DrikaCake-master/src/controllers/request.php?function=findCake`)
         .then(result => 
             result.json())
         .then(data => {
@@ -185,7 +189,7 @@ function displayDessert() {
                 let resultCakeSort = [];
 
                 data.result.forEach(cakeDessert => {
-                    if (cakeDessert.nom.includes('Dessert')) {
+                    if (cakeDessert.typeGateau.includes('Dessert')) {
                         resultCakeSort.push(cakeDessert);
                     }
                 });
@@ -245,24 +249,6 @@ function createStyleDessert(cakeDessert){
 }
 
 
-
-
-
-        // <div class="dessert-item">
-        //     <div class="dessert-img">
-        //       <img src="image/quindim.jpg" alt="quindim">
-        //     </div>
-
-        //     <div class="dessert-text">
-        //       <h1>Quindim</h1>
-        //       <p>Dessert brésilien à base de jaune d’œufs, noix de coco fraîche, lait de coco et sucre. <br>
-        //         Ce dessert ne contient ni gluten et ni lactose. </p>
-        //     </div>
-
-        //     <div class="dessert-price">
-        //       <p>18€ - 10 parts</p>
-        //     </div>
-        // </div>
 
 
 

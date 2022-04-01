@@ -257,66 +257,7 @@ nav ul li a:hover {
   }
 }
 
-/*/************* Prez *************/
-/*
-.prez-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.prez {
-  width: 600px;
-  height: 350px;
-  margin: 20px;
-  transition: 0.5s;
-  background: linear-gradient(45deg, #c0ebdc, #eaf8f3);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.prez h2 {
-  text-align: center;
-  padding-top: 15px;
-  color: #5a8576;
-  text-transform: uppercase;
-  font-size: 2.2em;
-  line-height: 1em;
-}
-
-.prez p {
-text-align: center;
-padding-top: 105px;
-color: #5a8576;
-}
-
-.cheffe {
-  width : 290px;
-  height : 400px;
-}
-
-@media (max-width: 530px) {
-
-  .prez p {
-     padding-top: 50px;
-   }
- 
-   .cheffe{
-     width: 150px;
-     height: 260px;
-   }
- }
-
-@media (max-width: 490px) {
-
- .prez p {
-    padding-top: 50px;
-  }
-
-  .cheffe{
-    width: 150px;
-    height: 260px;
-  }
-}*/*/
 
 /*********** PRESENTATION ************/
 
@@ -333,7 +274,8 @@ color: #5a8576;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1vh;
+ /* margin-top: 1vh;*/
+  /*margin-bottom: 1vh;*/
   font-size: 6vw;
   color: #97dfc6;
   font-family: 'Charmonman';
@@ -378,7 +320,7 @@ color: #5a8576;
 
 .section_description .container .card .content {
   position: relative;
-  width: 55%;
+  width: 52%;
   left: 20%;
   padding: 20px 20px 20px 40px;
   opacity: 0;
@@ -445,6 +387,25 @@ color: #5a8576;
     margin: 40px 20px;
   }
 }
+
+@media (max-width: 550px){
+  .section_description .container .card .content {
+    width: 80%;
+    opacity: 1;
+    visibility: visible;
+    margin-left: -50px;
+  }
+
+  .section_description .container .card .content p{
+    font-size: 16px;
+  }
+
+  .section_description .container .card img {
+    display: none;
+  }
+}
+
+
 
 @media (max-width: 420px) {
   .container .card .content {
@@ -1328,6 +1289,7 @@ color: #5a8576;
 
 .big_cake{
   min-height: calc(100vh - 60px);
+  margin-bottom: 50px;
 }
 
 .wave{
@@ -1336,6 +1298,15 @@ color: #5a8576;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 80px;
+}
+
+.wave2 {
+  height: 300px;
+  background-image: url(../image/wave-bottom.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -130px;
+  margin-bottom: -80px;
 }
 
 .title_bigcake{
@@ -1626,6 +1597,14 @@ color: #5a8576;
   .dessert .dessert-item:nth-child(even) .dessert-price{
     left: 50%;
   }
+
+  .dessert .dessert-item .dessert-img img{
+    border-radius: 40px;
+  }
+
+  .dessert .dessert-item:nth-child(odd) .dessert-img img{
+    border-radius: 40px;
+  }
 }
 
 @media screen and (max-width: 375px){
@@ -1638,29 +1617,4 @@ color: #5a8576;
     font-size: 14px;
   }
 }
-
-
-/*********** FORMULAIRE ************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
