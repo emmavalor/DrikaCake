@@ -65,7 +65,7 @@ function createStyle(cake){
     titleCake.setAttribute("class", "title_bigcake");
 
     let img = document.createElement('img');
-    img.setAttribute('src', `image/${cake.photo}`);
+    img.setAttribute('src', `image/${cake.photo}`); 
 
     let h1_title = document.createElement('h1');
     h1_title.textContent = `${cake.nom}`;

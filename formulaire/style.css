@@ -115,7 +115,7 @@ label{
 }
 
 select{
-	width: 90%;
+	width: 91%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
 	background-color: #d5f2e8;
@@ -148,9 +148,13 @@ textarea{
 .tabDesGateaux {
 	display:flex;
 	justify-content:center;
+	background: white;
+    position: fixed;
+    left: 0;
+    top: 0px;
 }
 
-.me1a, .me2a, .me3a, .me4a, .me5a, .me6a{
+.me1a{
 	border-radius: 6px;
   box-shadow: 1px 1px 3px black;
   overflow: hidden;

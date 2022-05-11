@@ -6,16 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet"/>
-		<link rel="stylesheet" href="css/styleAdmin.css">
-		<script src="js/formulaire.js"></script>
-		<link rel="icon" type="image/png" href="image/logo-final.png">
+		<link rel="stylesheet" type="text/css" href="../DrikaCakeML-master/css/styleAdmin.css">
+		<!-- <script src="js/formulaire.js"></script> -->
+		<link rel="icon" type="image/png" href="../DrikaCakeML-master/image/logo-final.png">
 		<title>Drika Cakes | Administrateur</title>
 	</head>
 
 	<body>
 		<section class="container">
 			<div class="img">
-				<img src="image/admin-co.png" alt="image administarteur">
+				<img src="../DrikaCakeML-master/image/admin-co.png" alt="image administarteur">
 			</div>
 
 			<form method="POST" class="connexion" action="admin/espace_admin.php">
